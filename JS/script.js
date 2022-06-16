@@ -38,5 +38,6 @@ for (let i = 1; i <= 100; i++) {
     boxWrapper.append (boxElements) ;
     const boxContent = document.createTextNode (message);
     boxElements.appendChild (boxContent);
+    boxElements.classList.add ("ms_box", "p-2", "flex", "align-center", "justify-center")
 
 };
