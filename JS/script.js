@@ -14,5 +14,9 @@ document.createElement ('nome tag') append e innerHTML.):
 */
 
 for (let i = 1; i <= 100; i++) {
-    console.log (i)
+    // console.log(i)
+    const fizzNumbers = i % 3;
+    // console.log (fizzNumbers)
+    const buzzNumbers = i % 5;
+    // console.log(buzzNumbers)
 };
