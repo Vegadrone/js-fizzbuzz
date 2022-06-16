@@ -21,12 +21,12 @@ for (let i = 1; i <= 100; i++) {
     // console.log(buzzNumbers)
     let message;
 
-    if (fizzNumbers == 0){
-        message = "Fizz";  
-    }  else if (buzzNumbers == 0) {
+    if (fizzNumbers == 0 && buzzNumbers == 0){
+        message = "FizzBuzz";  
+    } else if (fizzNumbers == 0) {
+        message = "Fizz";
+    } else if (buzzNumbers == 0){
         message = "Buzz";
-    } else if (fizzNumbers == 0 && buzzNumbers == 0){
-        message = "FizzBuzz";
     } else {
         message = i;
     }
