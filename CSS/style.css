@@ -1,5 +1,5 @@
 body {
-    background-color: bisque;
+    background-color: rgb(33, 30, 74);
     font-family: sans-serif;
 }
 
@@ -18,15 +18,31 @@ body {
 #box-wrapper {
     width: 60%;
     margin: 0 auto;
-    border: 5px solid salmon;
 }
-.text-center {
+.text-center-white {
     text-align: center;
+    color:white;
 }
 
 .flex {
     display: flex;
     flex-wrap: wrap;
+}
+
+.color-fizz {
+    background-color: rgb(221, 28, 66);
+}
+
+.color-buzz {
+    background-color: rgb(137, 228, 19);
+}
+
+.color-fizzbuzz {
+    background-color: rgb(102, 74, 203);
+}
+
+.base-color {
+    background-color: rgb(241, 119, 31);
 }
 
 .ms_box {

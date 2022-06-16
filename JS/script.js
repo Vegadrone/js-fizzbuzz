@@ -22,22 +22,26 @@ for (let i = 1; i <= 100; i++) {
     const buzzNumbers = i % 5;
     // console.log(buzzNumbers)
     let message;
+    let boxElements = document.createElement('div');
+    boxWrapper.append(boxElements);
 
     if (fizzNumbers == 0 && buzzNumbers == 0){
-        message = "FizzBuzz";  
+        message = "FizzBuzz";
+        boxElements.classList.add ("color-fizzbuzz");  
     } else if (fizzNumbers == 0) {
         message = "Fizz";
+        boxElements.classList.add("color-fizz"); 
     } else if (buzzNumbers == 0){
         message = "Buzz";
+        boxElements.classList.add("color-buzz"); 
     } else {
         message = i;
+        boxElements.classList.add("base-color"); 
     }
     console.log (message);
 
-    const boxElements = document.createElement ('div');
-    boxWrapper.append (boxElements) ;
     const boxContent = document.createTextNode (message);
     boxElements.appendChild (boxContent);
-    boxElements.classList.add ("ms_box", "p-2", "flex", "align-center", "justify-center")
+    boxElements.classList.add ("ms_box", "p-2", "flex", "align-center", "justify-center");
 
 };
