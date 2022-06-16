@@ -11,10 +11,8 @@ document.createElement ('nome tag') append e innerHTML.):
     - Fizz al posto dei numeri divisibili per 3 e che danno resto 0;
     - Buzz al posto dei numeri divisibili per 5 e che danno resto 0;
     - FizzBuzz al posto dei numeri divisibili per 3 e per 5 e che danno resto 0;
-
-
-
-
-
-
 */
+
+for (let i = 1; i <= 100; i++) {
+    console.log (i)
+};
