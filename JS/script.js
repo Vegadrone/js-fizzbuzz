@@ -13,6 +13,8 @@ document.createElement ('nome tag') append e innerHTML.):
     - FizzBuzz al posto dei numeri divisibili per 3 e per 5 e che danno resto 0;
 */
 
+const boxWrapper = document.querySelector ('div.container');
+
 for (let i = 1; i <= 100; i++) {
     // console.log(i)
     const fizzNumbers = i % 3;
@@ -31,4 +33,10 @@ for (let i = 1; i <= 100; i++) {
         message = i;
     }
     console.log (message);
+
+    const boxElements = document.createElement ('div');
+    boxWrapper.append (boxElements) ;
+    const boxContent = document.createTextNode (message);
+    boxElements.appendChild (boxContent);
+
 };
